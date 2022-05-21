@@ -8,5 +8,6 @@
 import UIKit
 
 class ForgetPasswordViewController: UIViewController {
-    
+    @IBAction private func tapToCloseKeyboard(_ sender: UITapGestureRecognizer){
+        self.view.endEditing(true)}
 }

@@ -102,6 +102,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kAC-14-Chq" secondAttribute="trailing" constant="30" id="03S-bU-PAF"/>
                             <constraint firstItem="5An-Ig-SdQ" firstAttribute="leading" secondItem="ttp-YV-RMa" secondAttribute="leading" id="0B8-rv-9FC"/>
@@ -144,12 +145,35 @@
                                 <exclude reference="Xmy-u2-rlR"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jya-Hb-TV9" appends="YES" id="xTr-qG-68L"/>
+                            <outletCollection property="gestureRecognizers" destination="7fX-Ui-C1K" appends="YES" id="kIT-ES-Rj2"/>
+                            <outletCollection property="gestureRecognizers" destination="mFr-bD-djR" appends="YES" id="xv8-En-cbl"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="yBu-76-Jpn"/>
+                    <connections>
+                        <outlet property="txtCorreo" destination="fH2-ng-NNA" id="dtN-wc-S4f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jya-Hb-TV9">
+                    <connections>
+                        <action selector="tapToCloseKeyboard:" destination="BYZ-38-t0r" id="kHo-34-pPN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="7fX-Ui-C1K">
+                    <connections>
+                        <action selector="swipeToOpenKeyboard:" destination="BYZ-38-t0r" id="qFB-hv-DuX"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="mFr-bD-djR">
+                    <connections>
+                        <action selector="swipeToCloseKeyboard:" destination="BYZ-38-t0r" id="jbY-xD-yEG"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-704" y="-289"/>
+            <point key="canvasLocation" x="-710" y="-216"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="rtp-so-k1p">
@@ -241,6 +265,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w3o-7O-4Dl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="MDu-j4-2bC" firstAttribute="height" secondItem="wuz-5A-QwV" secondAttribute="height" id="0IJ-go-FBk"/>
                             <constraint firstItem="8xO-11-96v" firstAttribute="height" secondItem="QFJ-Y8-xU0" secondAttribute="height" multiplier="0.84" id="1j6-kN-ND4"/>
@@ -297,17 +322,37 @@
                                 <exclude reference="Kq6-CN-WJk"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="laX-wr-XX7" appends="YES" id="YSD-hj-28O"/>
+                            <outletCollection property="gestureRecognizers" destination="3EP-Tq-0ke" appends="YES" id="nqq-Ls-9th"/>
+                            <outletCollection property="gestureRecognizers" destination="s8Z-qt-or0" appends="YES" id="eyr-kb-sEq"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="jTE-Qu-Nsx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZ7-Xl-EPL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="laX-wr-XX7">
+                    <connections>
+                        <action selector="tapToCloseKeyboard:" destination="2dk-dG-o8j" id="cdY-Z5-uYl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="3EP-Tq-0ke">
+                    <connections>
+                        <action selector="swipeToOpenKeyboard:" destination="2dk-dG-o8j" id="rAi-H9-T0f"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="s8Z-qt-or0">
+                    <connections>
+                        <action selector="swipeToCloseKeyboard:" destination="2dk-dG-o8j" id="9MT-cP-Jzh"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="169.56521739130437" y="-216.29464285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--Forget Password View Controller-->
         <scene sceneID="WO9-iF-JUA">
             <objects>
-                <viewController id="BqS-Cq-s5R" sceneMemberID="viewController">
+                <viewController id="BqS-Cq-s5R" customClass="ForgetPasswordViewController" customModule="EP2_NRC1146_Imperium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bhj-Sx-TOP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -404,12 +449,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZaZ-Vy-Q8j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Nly-3U-gvL" appends="YES" id="Yy3-gA-sKt"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="MgZ-zC-zji"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aro-dY-8f6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Nly-3U-gvL">
+                    <connections>
+                        <action selector="tapToCloseKeyboard:" destination="BqS-Cq-s5R" id="uIi-87-1hc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-355" y="464"/>
+            <point key="canvasLocation" x="-246" y="538"/>
         </scene>
     </scenes>
     <resources>
